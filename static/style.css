@@ -5,10 +5,6 @@
     background-color: white;
 }
 
-/*a:link {
-    color: #FDF0D5;
-}*/
-
 a:hover {
     background-color: #C1121F;
     color: #FDF0D5;
@@ -48,6 +44,7 @@ nav li a {
     text-align: center;
     color: #780000;
     font-size: 24;
+    padding: 14px 16px;
     font-weight: bold;
 }
 
