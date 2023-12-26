@@ -57,7 +57,7 @@ nav li a {
 }
 
 .top-nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
