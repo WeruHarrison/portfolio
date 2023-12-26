@@ -75,11 +75,31 @@ nav li a {
 }
 
 .footer {
-    background-color: #780000;
-    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
+.flex-footer-item-left {
+    flex: 33.33%;
+    text-align: justify;
+}
 
+.flex-footer-item-middle {
+    flex: 33.33%;
+    text-align: justify;
+}
+
+.flex-footer-item-right {
+    flex: 33.33%;
+    text-align: justify;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
 
 
 
