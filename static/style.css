@@ -72,6 +72,9 @@ nav li a {
         float: none;
         width: 100%;
     }
+    .flex-footer-item-left, .flex-footer-item-middle, .flex-footer-item-right {
+        flex: 100%;
+    }
 }
 
 .footer {
