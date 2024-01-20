@@ -2,7 +2,9 @@
 
 A portfolio of my data analytics projects.
 
-In this portfolio, I will showcase all the project I have done. 
+In this website, I will publsih all the project I have done.
+
+I will publish them in a blog format.
 
 I will also include the data and raw code (if used).
 
