@@ -6,13 +6,13 @@
 }
 
 a:hover {
-    background-color: #C1121F;
-    color: #FDF0D5;
+    background-color: #FFFBC7;
+    color: #FFFFFF;
 }
 
 a:active {
-    background-color: #C1121F;
-    color: #FDF0D5;
+    background-color: #2F263A;
+    color: #FFFFFF;
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav li a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 14px 8px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -42,19 +42,21 @@ nav li a {
 .index a {
     float: left;
     text-align: center;
-    color: #780000;
+    color: #ffffff;
     font-size: 24;
-    padding: 14px 16px;
+    padding: 14px 8px;
     font-weight: bold;
 }
 
+/*
 .index a:hover {
-    background-color: white;
+    background-color: #000000;
 }
 
 .index a:active {
     background-color: white;
 }
+*/
 
 .top-nav {
     position: sticky;
