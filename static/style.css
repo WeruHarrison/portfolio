@@ -1,17 +1,21 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
-    color: black;
-    background-color: white;
 }
 
-a:hover {
+nav a:hover {
     background-color: #FFFBC7;
+    color: #000000;
+}
+
+nav a:active {
+    background-color: #2F263A;
     color: #FFFFFF;
 }
 
-a:active {
-    background-color: #2F263A;
+nav, footer {
+    overflow: hidden;
+    background-color: #425C5A;
     color: #FFFFFF;
 }
 
@@ -19,49 +23,33 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
 }
 
 nav li {
     float: right;
 }
 
+nav .index {
+    float: left;
+}
+
 nav li a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 14px 8px;
-    font-weight: bold;
+    padding: 8px 14px;
     font-size: 20px;
+    color: #FFFFFF;
 }
 
-.index {
-    float: left;
-}
-
-.index a {
-    float: left;
-    text-align: center;
-    color: #ffffff;
-    font-size: 24;
-    padding: 14px 8px;
-    font-weight: bold;
-}
-
-/*
-.index a:hover {
-    background-color: #000000;
-}
-
-.index a:active {
-    background-color: white;
-}
-*/
 
 .top-nav {
     position: sticky;
     top: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -82,19 +70,12 @@ nav li a {
     width: 100%;
 }
 
-.flex-footer-item-left {
-    flex: 33.33%;
-    text-align: justify;
-}
-
-.flex-footer-item-middle {
-    flex: 33.33%;
-    text-align: justify;
-}
-
+.flex-footer-item-left,
+.flex-footer-item-middle,
 .flex-footer-item-right {
-    flex: 33.33%;
-    text-align: justify;
+    flex: 1; /* Equal width for all footer items */
+    text-align: justified;
+    padding: 0 10%; /* Adding padding for spacing between items */
 }
 
 .copyright {
@@ -110,11 +91,24 @@ nav li a {
 .footer a {
     text-decoration: none;
     font-size: 18px;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    background-color: #FFFBC7;
+    color: #000000;
+}
+
+footer a:active {
+    background-color: #2F263A;
+    color: #FFFFFF;
 }
 
 
 @media (max-width: 600px) {
-    .flex-footer-item-left, .flex-footer-item-middle, .flex-footer-item-right {
+    .flex-footer-item-left, 
+    .flex-footer-item-middle, 
+    .flex-footer-item-right {
         flex: 100%;
     }
 }
