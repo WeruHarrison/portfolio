@@ -14,11 +14,11 @@
 .flex-hero-item-left,
 .flex-hero-item-right {
     flex: 1; /* Equal width for all hero items */
-    padding-right: 4%; /* Adding padding for spacing between items */
-}
-
-#hero-content {
-    margin-top: 150px;
+    padding-right: 2%; /* Adding padding for spacing between items */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }
 
 @media screen and (max-width: 600px) {
@@ -36,6 +36,7 @@
 
 .main-content h2 {
     text-align: center;
+    font-size: 1.25em;
 }
 
 .main-content p {
@@ -87,7 +88,7 @@ nav li a {
     text-align: center;
     text-decoration: none;
     padding: 8px 14px;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #FFFFFF;
 }
 
@@ -134,12 +135,12 @@ nav li a {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .footer a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #FFFFFF;
 }
 
@@ -188,6 +189,7 @@ input[type=submit] {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    transition: 400ms;
 }
   
 input[type=submit]:hover {
@@ -208,19 +210,31 @@ input[type=submit]:hover {
 .contact-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 24px 0 48px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-cards h2 {
+    font-size: 1.125em;
 }
 
 .flex-card-item-left,
 .flex-card-item-middle,
 .flex-card-item-right {
     flex: 1; /* Equal width for all footer items */
-    text-align: justified;
-    padding: 0 10%; /* Adding padding for spacing between items */
-    margin: 12px 12px;
+    padding: 0 20px; /* Adding padding for spacing between items */
+    margin: 20px 12px;
     border: 2px solid #ccc;
+    border-radius: 8%;
 }
+
+.flex-card-item-left:hover,
+.flex-card-item-middle:hover,
+.flex-card-item-right:hover {
+    background-color: #425C5A;
+    color: #FFFFFF;
+}
+
 
 .contact-buttons,
 .contact-buttons a {
@@ -229,8 +243,8 @@ input[type=submit]:hover {
     padding: 12px 20px;
     border: none;
     text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 48px;
+    font-size: 1.125em;
+    margin: 12px 0;
 }
 
 .contact-buttons:hover, 
