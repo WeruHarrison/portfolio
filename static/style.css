@@ -3,6 +3,52 @@
     font-size: 16px;
 }
 
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 8px;
+    padding: 0 20px 0 0;
+}
+
+.flex-hero-item-left,
+.flex-hero-item-right {
+    flex: 1; /* Equal width for all hero items */
+    padding-right: 4%; /* Adding padding for spacing between items */
+}
+
+#hero-content {
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-hero-item-left,
+    .flex-hero-item-right {
+        flex: 100%;
+    }
+}
+
+.main-content {
+    max-width: 60%;
+    margin: 12px auto;
+    padding: 10px;
+}
+
+.main-content h2 {
+    text-align: center;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .main-content {
+        max-width: 100%;
+    }
+}
+
+/*Style the navigation bar for the whole website*/
 nav a:hover {
     background-color: #FFFBC7;
     color: #000000;
@@ -17,6 +63,8 @@ nav, footer {
     overflow: hidden;
     background-color: #425C5A;
     color: #FFFFFF;
+    max-width: 100%;
+    margin: auto;
 }
 
 nav ul {
@@ -64,6 +112,7 @@ nav li a {
     }
 }
 
+/* Style for the footer for whole website*/
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -110,13 +159,96 @@ footer a:active {
     .flex-footer-item-middle, 
     .flex-footer-item-right {
         flex: 100%;
+        text-align: center;
     }
 }
 
+/* Style inputs in contact form*/
+input[type=text], text, select, textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #425C5A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #FFFBC7;
+    color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    input[type=text], text, select, textarea {
+        width: 100%;
+    }
+    input[type=email] {
+        width: 100%;
+    }
+}
+
+/*Style contact cards in contact form*/
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 24px 0 48px 0;
+}
+
+.flex-card-item-left,
+.flex-card-item-middle,
+.flex-card-item-right {
+    flex: 1; /* Equal width for all footer items */
+    text-align: justified;
+    padding: 0 10%; /* Adding padding for spacing between items */
+    margin: 12px 12px;
+    border: 2px solid #ccc;
+}
+
+.contact-buttons,
+.contact-buttons a {
+    background-color: #425C5A;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.contact-buttons:hover, 
+.contact-buttons:hover a {
+    background-color: #FFFBC7;
+    color: #000000;
+}
 
 
-
-
+/*Making the contact cards responsive*/
+@media (max-width: 600px) {
+    .flex-card-item-left, 
+    .flex-card-item-middle, 
+    .flex-card-item-right {
+        flex: 100%;
+        text-align: center;
+    }
+}
 
 
 
