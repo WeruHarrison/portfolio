@@ -273,6 +273,16 @@ input[type=submit]:hover {
     padding-top: 40px;
 }
 
+.left-column h3, 
+.blogs-left-column h3 {
+    font-size: 1.125em;
+}
+
+.left-column p,
+.blogs-left-column p {
+    line-height: 28px;
+}
+
 .right-column {
     float: left;
     width: 25%;
@@ -302,6 +312,7 @@ input[type=submit]:hover {
 
 .project-image {
     width: 100%;
+    height: 200px;
 }
 
 .project-tags {
@@ -359,4 +370,28 @@ input[type=submit]:hover {
 
 .recent-projects-card a:hover {
     color: #2F263A;
+}
+
+
+/*Styling the homepage of blogs*/
+ .blogs-right-column {
+    float: right;
+    width: 25%;
+    padding-top: 40px;
+}
+
+.blogs-left-column {
+    float: right;
+    width: 75%;
+    padding: 40px 0 0 20px;
+
+}
+
+/*Making the columns of blogs homepage responsive*/
+@media screen and (max-width: 600px) {
+    .blogs-left-column,
+    .blogs-right-column {   
+      width: 100%;
+      padding: 0;
+    }
 }
