@@ -1,6 +1,6 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -269,7 +269,7 @@ input[type=submit]:hover {
 /*Styling the homepage of projects*/
 .left-column {
     float: left;
-    width: 75%;
+    width: 70%;
     padding-top: 40px;
 }
 
@@ -283,9 +283,15 @@ input[type=submit]:hover {
     line-height: 28px;
 }
 
+.projects-title {
+    font-size: 36px; 
+    text-align: center;
+    line-height: 54px;
+}
+
 .right-column {
     float: left;
-    width: 25%;
+    width: 30%;
     padding: 40px 0 0 20px;
 
 }
@@ -352,26 +358,40 @@ input[type=submit]:hover {
 
 .recent-projects-card {
     box-shadow: 0 4px 8px 0 #425C5A;
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
+    height: 754px;
 }
 
-.recent-projects-card li {
-    list-style-type: none;
+.recent-projects-card-image {
+    float: left;
+    width: 30%;
+    height: 100px;
+    padding-left: 4px;
+}
+
+.recent-projects-card-link {
+    float: left;
+    width: 70%;
+    padding: 8px 8px 0 8px;
+    height: 200px;
     text-align: left;
-    padding-bottom: 20px;
-}
-
-.recent-projects-card a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: #425C5A;
+    font-weight: bold;
 }
 
-.recent-projects-card a:hover {
+.recent-projects-card-link:hover {
     color: #2F263A;
 }
 
+.recent-projects-card h1 {
+    font-size: 26px; 
+    margin-top: 96px; 
+    padding: 16px 0; 
+    text-align: center;
+}
 
 /*Styling the homepage of blogs*/
  .blogs-right-column {
@@ -393,5 +413,34 @@ input[type=submit]:hover {
     .blogs-right-column {   
       width: 100%;
       padding: 0;
+    }
+}
+
+
+/*Styling projects and blog pages*/
+.project-container {
+    width: 70%; 
+    text-align: justify; 
+    margin: auto;
+}
+
+.project-container h1 {
+    text-align: left; 
+    font-size: 36px;
+}
+.project-container h3 {
+    font-size: 24px; 
+    opacity: 0.7;
+}
+
+.project-container p {
+    font-size: 20px;
+    line-height: 30px;    
+}
+
+@media screen and (max-width: 600px) {
+    .project-container {
+        width: 100%;
+        padding: 0 12px;
     }
 }
