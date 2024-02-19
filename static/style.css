@@ -5,34 +5,28 @@
 }
 
 /*Styling the hero section*/
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 8px;
-    padding-right: 20px;
+.hero-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 75%;
+    margin: 60px auto;
+    max-height: 400px;
 }
 
-.flex-hero-item-left,
-.flex-hero-item-right {
-    flex: 1; /* Equal width for all hero items */
-    padding-right: 2%; /*Adding padding for spacing between items */
+.hero-grid-items {
     display: flex; /*Making the items centered horizontally*/
     justify-content: center;
     align-items: center;
     max-height: 400px;
+    padding: 36px;
 }
-/*
-.hero img {
-    max-height: 400px;
-    width: auto;
-}*/
 
 
-@media screen and (max-width: 992px) {
-    .flex-hero-item-left,
-    .flex-hero-item-right {
-        flex: 100%;
+@media only screen and (max-width: 600px) {
+    .hero-grid-items {
+        grid-column: 1/ span 2;
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -54,7 +48,8 @@
 
 @media screen and (max-width: 992px) {
     .main-content {
-        max-width: 100%;
+        max-width: 90%;
+        margin: 12px auto;
     }
 }
 
