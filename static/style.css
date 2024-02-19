@@ -4,32 +4,39 @@
     box-sizing: border-box;
 }
 
+/*Styling the hero section*/
 .hero {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 8px;
-    padding: 0 20px 0 0;
+    padding-right: 20px;
 }
 
 .flex-hero-item-left,
 .flex-hero-item-right {
     flex: 1; /* Equal width for all hero items */
     padding-right: 2%; /*Adding padding for spacing between items */
-    display: flex;
+    display: flex; /*Making the items centered horizontally*/
     justify-content: center;
     align-items: center;
     max-height: 400px;
 }
+/*
+.hero img {
+    max-height: 400px;
+    width: auto;
+}*/
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .flex-hero-item-left,
     .flex-hero-item-right {
         flex: 100%;
     }
 }
 
+/*Styling the main contents of the homepage*/
 .main-content {
     max-width: 60%;
     margin: 12px auto;
@@ -45,13 +52,13 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .main-content {
         max-width: 100%;
     }
 }
 
-/*Style the navigation bar for the whole website*/
+/*Styling the navigation bar for the whole website*/
 nav a:hover {
     background-color: #FFFBC7;
     color: #000000;
