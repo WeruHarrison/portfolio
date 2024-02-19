@@ -398,6 +398,40 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+/*Styling the 'Read More' link*/
+.read-more {
+    text-decoration: none;
+    color: #425C5A;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color:#2F263A;
+}
+
+/*Styling the related project card in a project and blog page*/
+.related-project {
+    padding-top: 16px;
+    overflow: hidden;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.related-project > img {
+    width: 150px; 
+    display: inline-block; 
+    vertical-align: top;
+}
+
+.related-project > a {
+    height: 150px; 
+    display: block; 
+    padding-bottom: 20px;
+    display: flex; /*Making the items centered horizontally*/
+    justify-content: center;
+    align-items: center;
+}
+
 /*Styling the homepage of blogs*/
  .blogs-right-column {
     float: right;
