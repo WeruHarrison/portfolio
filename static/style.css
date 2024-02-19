@@ -217,29 +217,25 @@ input[type=submit]:hover {
 
 /*Style contact cards in contact form*/
 .contact-cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    max-width: 75%;
+    margin: auto;  
 }
 
 .contact-cards h2 {
-    font-size: 1.125em;
+    font-size: 24px;
 }
 
-.flex-card-item-left,
-.flex-card-item-middle,
-.flex-card-item-right {
-    flex: 1; /* Equal width for all footer items */
-    padding: 0 20px; /* Adding padding for spacing between items */
+.contact-card-items {
+    padding: 0 20px;
     margin: 20px 12px;
     border: 2px solid #ccc;
     border-radius: 8%;
 }
 
-.flex-card-item-left:hover,
-.flex-card-item-middle:hover,
-.flex-card-item-right:hover {
+.contact-card-items:hover {
     background-color: #425C5A;
     color: #FFFFFF;
 }
@@ -254,6 +250,7 @@ input[type=submit]:hover {
     text-decoration: none;
     font-size: 1.125em;
     margin: 12px 0;
+    border-radius: 100px;
 }
 
 .contact-buttons:hover, 
@@ -264,15 +261,14 @@ input[type=submit]:hover {
 
 
 /*Making the contact cards responsive*/
-@media (max-width: 600px) {
-    .flex-card-item-left, 
-    .flex-card-item-middle, 
-    .flex-card-item-right {
-        flex: 100%;
+@media only screen and (max-width: 992px) {
+    .contact-card-items {
+        grid-column: 1/ span 3;
         text-align: center;
+        max-width: 300px;
+        margin: 20px auto;
     }
 }
-
 
 /*Styling the homepage of projects*/
 .left-column {
