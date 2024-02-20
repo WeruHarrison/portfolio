@@ -273,13 +273,14 @@ input[type=submit]:hover {
 }
 
 .left-column h3, 
-.blogs-left-column h3 {
-    font-size: 1.125em;
+.blogs-right-column h3 {
+    font-size: 22px;
 }
 
 .left-column p,
-.blogs-left-column p {
+.blogs-right-column p {
     line-height: 28px;
+    font-size: 20px;
 }
 
 .projects-title {
@@ -381,7 +382,6 @@ input[type=submit]:hover {
     padding: 8px 8px 0 8px;
     height: 200px;
     text-align: left;
-    font-size: 18px;
     text-decoration: none;
     color: #425C5A;
     font-weight: bold;
@@ -421,25 +421,26 @@ input[type=submit]:hover {
     width: 150px; 
     display: inline-block; 
     vertical-align: top;
+    height: auto;
 }
 
 .related-project > a {
     height: 150px; 
     display: block; 
     padding-bottom: 20px;
-    display: flex; /*Making the items centered horizontally*/
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /*Styling the homepage of blogs*/
- .blogs-right-column {
+ .blogs-left-column {
     float: right;
     width: 30%;
     padding-top: 40px;
 }
 
-.blogs-left-column {
+.blogs-right-column {
     float: right;
     width: 70%;
     padding: 40px 0 0 20px;
