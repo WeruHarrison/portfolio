@@ -7,21 +7,22 @@
 <meta name="author" content="Harrison Weru">
 <meta name ="viewport" content="width=device-width, initiale-scale=1.0">
 <link rel="stylesheet" href="../static/style.css">
+<!-- link to js script -->
+<script type="text/javascript" src="../static/script.js" defer></script>
+<!-- fontawsome icons embedded link -->
+<script src="https://kit.fontawesome.com/759d8c717c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="top-nav">
-        <nav>
-            <ul>
-                <li class="index"><a href="../index.html">Harrison Weru</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="../blogs/index.html">Blogs</a></li>
-                <li><a href="../projects/index.html">Projects</a></li>
-            </ul>
-        </nav>
+    <div class="top-nav" id="top-nav">
+        <a href="../index.html" class="index">Harrison Weru</a>
+        <a href="../contact.html" class="menu">Contact</a>
+        <a href="../blogs/index.html" class="menu">Blogs</a>
+        <a href="../projects/index.html" class="menu">Projects</a>
+        <a href="javascript:void(0);" class="nav-icon" onclick="topNavFunction()"><i class="fa-solid fa-bars fa-lg"></i></a>
     </div>
 
-    <div>
+    <div style="margin-top: 72px;">
         <h1 class="projects-title">Projects</h1>
     </div>
 
@@ -155,9 +156,11 @@
                     <p style="font-size: 20px; margin: 24px 0;">Economist | Data Analyst</p>
                 </div>
 
-                <p>Icons of X, Ln, WA</p>
+                <a style="padding: 0 8px;" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg" style="color: #000000;"></i></a>
+                <a style="padding: 0 8px;" href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i></a>
+                <a style="padding: 0 8px;" href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i></a>
 
-                <button class="contact-card-button">Contact</button>
+                <a href="../contact.html"><button class="contact-card-button">Contact</button></a>
             </div>
 
             <div class="recent-projects-card">
