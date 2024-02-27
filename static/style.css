@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     width: 75%;
-    margin: 48px auto 24px auto;
+    margin: 72px auto 24px auto;
     /* overflow: auto; */
 }
 
@@ -160,7 +160,6 @@
         grid-template-columns: auto auto;
         justify-content: space-evenly;
         align-content: center;
-        /* width: 90%; */
         margin: 0 auto;
     }
 } 
@@ -168,25 +167,21 @@
 @media only screen and (max-width:600px) {
     .interest-grid-items {
         grid-column: 1/ span 3;
-        /* text-align: center; */
         max-width: 90%;
         margin: 20px auto;
     }
 }
 
-
 /*Styling the navigation bar for the whole website*/
-nav a:hover {
-    background-color: #FFFBC7;
-    color: #000000;
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav a:active {
-    background-color: #2F263A;
-    color: #FFFFFF;
-}
-
-nav, footer {
+.top-nav, footer {
     overflow: hidden;
     background-color: #425C5A;
     color: #FFFFFF;
@@ -194,50 +189,69 @@ nav, footer {
     margin: auto;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-}
-
-nav li {
-    float: right;
-}
-
-nav .index {
+.index {
     float: left;
 }
 
-nav li a {
+.top-nav a {
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 8px 14px;
+    padding: 12px 14px;
     font-size: 1.25em;
     color: #FFFFFF;
 }
 
+.menu {
+    float: right;
+}
 
-.top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 1000;
+.top-nav a:hover {
+    background-color: #FFFBC7;
+    color: #000000;
+}
+
+.top-nav a:active {
+    background-color: #FFFBC7;
+    color: #000000;
+}
+
+.top-nav .nav-icon {
+    display: none;
+}
+
+.nav-icon a:hover {
+    background-color: #425C5A;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 600px) {
-    nav li {
-        float: none;
-        width: 100%;
+    .top-nav .menu {
+        display: none;
     }
 
-    .index a {
+    .top-nav .nav-icon {
+        display: block;
+        float: right;
+        margin-right: 24px;
+        padding: 24.5px;
+    }
+
+    .top-nav.responsive {
+        position: fixed; 
+        top: 0; 
+        left: 0;
+    }
+
+    .top-nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .top-nav.responsive a {
         float: none;
-        width: 100%;
+        display: block;
+        text-align: left;
     }
 }
 

@@ -8,23 +8,21 @@
 <meta name ="viewport" content="width=device-width, initiale-scale=1.0">
 <!--link to style.css-->
 <link rel="stylesheet" href="static/style.css">
+<!-- link to js script -->
 <script type="text/javascript" src="static/script.js" defer></script>
-
+<!-- fontawsome icons embedded link -->
+<script src="https://kit.fontawesome.com/759d8c717c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="top-nav">
-        <nav>
-            <ul>
-                    <li class="index"><a href="index.html">Harrison Weru</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="blogs/index.html">Blogs</a></li>
-                    <li><a href="projects/index.html">Projects</a></li>
-            </ul>
-        </nav>
+    <div class="top-nav" id="top-nav">
+        <a href="index.html" class="index">Harrison Weru</a>
+        <a href="contact.html" class="menu">Contact</a>
+        <a href="blogs/index.html" class="menu">Blogs</a>
+        <a href="projects/index.html" class="menu">Projects</a>
+        <a href="javascript:void(0);" class="nav-icon" onclick="topNavFunction()"><i class="fa-solid fa-bars fa-lg"></i></a>
     </div>
 
-    
     <div class="hero-flex-container">
         <div class="hero-img">
             <img src="pictures/lion.jpeg" alt="A picture of Harrison Weru" style="max-width: 240px; height: auto; margin: 50px;">
@@ -36,7 +34,10 @@
                 I am an economist and data analyst. 
             </p>
             <div style="padding-top: 20px;">
-                X | Ln | GH | YT
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg" style="color: #000000;"></i></a> | 
+                <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i></a> | 
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #000000;"></i></a> | 
+                <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-lg" style="color: #000000;"></i></a>
             </div>
         </div>
     </div>
