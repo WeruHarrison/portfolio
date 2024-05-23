@@ -369,10 +369,9 @@ input[type=submit]:hover {
 }
 
 .contact-card-items:hover {
-    background-color: #425C5A;
-    color: #FFFFFF;
+    background-color: #FFFBC7;
+    /* color: #FFFFFF; */
 }
-
 
 .contact-buttons,
 .contact-buttons a {
@@ -388,10 +387,15 @@ input[type=submit]:hover {
 
 .contact-buttons:hover, 
 .contact-buttons:hover a {
-    background-color: #FFFBC7;
-    color: #000000;
+    /* background-color: #FFFBC7; */
+    color: #FFFBC7;
+    animation: contact-button-animation 2s infinite ease-in-out;
 }
 
+@keyframes contact-button-animation {
+    from {backround-color: #425C5A;}
+    to {background-color: #2F263A;}
+}
 
 /*Making the contact cards responsive*/
 @media only screen and (max-width: 992px) {
