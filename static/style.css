@@ -17,7 +17,7 @@
 
 .hero-img {
     background-color: #FFFBC7;
-    width: 340px;
+    width: 250px;
     height: auto;
 }
 
@@ -28,7 +28,7 @@
 
 .hero-text h1 {
     font-size: 36px;
-    line-height: 54px;
+    /* line-height: 54px; */
 }
 
 .hero-text > p {
@@ -36,7 +36,7 @@
     border-left: 5px solid #2F263A;
     margin-left: 8px;
     padding-left: 14px;
-    line-height: 33px;
+    /* line-height: 33px; */
 }
 
 
