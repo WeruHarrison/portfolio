@@ -63,6 +63,7 @@
 
 .main-content p {
     text-align: justify;
+    line-height: 27px;
 }
 
 @media screen and (max-width: 992px) {
