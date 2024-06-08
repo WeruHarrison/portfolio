@@ -73,6 +73,54 @@
     }
 }
 
+/*Styling the hobbies section in homepage*/
+.hobbies {
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+.hobby-card {
+    box-shadow: 0 4px 8px 0 #425C5A;
+    margin: auto;
+    text-align: center;
+}
+
+.hobby-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hobby-card-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #FFFBC7;
+    background-color: #425C5A;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.hobby-card-button:hover,
+.hobby-card-button a:hover {
+    opacity: 0.7;
+}
+
+.hobby-card h3 {
+    font-size: 20px; 
+    margin: 24px 0;
+}
+.hobby-card p {
+    font-size: 16px;
+    margin: 12px;
+}
+
 /*Styling the projects section*/
 .project-section-container {
     display: flex; 
