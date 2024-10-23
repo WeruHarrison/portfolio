@@ -16,18 +16,19 @@
 }
 
 .hero-img {
-    background-color: #FFFBC7;
+    /*background-color: #FFFBC7;
     width: 250px;
-    height: auto;
+    height: auto;*/
+    box-shadow: 0 4px 8px 0 #425C5A;
 }
 
 .hero-text {
-    margin-left: 40px;
+    margin-left: 10px;
     padding-left: 10px;
 }
 
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 28px;
     /* line-height: 54px; */
 }
 
@@ -52,7 +53,7 @@
 /*Styling the main contents of the homepage*/
 .main-content {
     max-width: 75%;
-    margin: 20px auto;
+    margin: auto auto;
     padding: 10px;
 }
 
@@ -63,7 +64,7 @@
 
 .main-content p {
     text-align: justify;
-    line-height: 27px;
+    line-height: 200%;
 }
 
 @media screen and (max-width: 992px) {
