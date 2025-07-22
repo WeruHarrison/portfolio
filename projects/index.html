@@ -23,10 +23,11 @@
     </div>
     
     <div class="row">
+        <h1 class="projects-title">Projects</h1>
         <div class="left-column">
              <div class="project-card">
                 <div>
-                    <h3>World Population Analyis</h3>
+                    <a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/data%20cleaning%20spotify%202024%20songs"><h3>World Population Analysis</h3></a>
                 </div>
                 <div class="project-image">
                     <img src="projects-pages/project1/images/crowded-roundabout.jpg" style="height: 200px;">
@@ -37,7 +38,7 @@
                         East Asia and Pacific had the largest population in 2020  although its growth rate has not been the fastest compared to other regions.
                         China had the largest population while Nauru had the smallest at just over 10,000 people.
                         In terms of population growth rate, Oman's population led with 57% while Yemen's population reduced by 17%.
-                        <br><a href="https://htmlpreview.github.io/?https://github.com/WeruHarrison/portfolio-projects/blob/main/world-population-analysis.html" class="read-more">Read more...</a>
+                        <br><a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/world%20population%20analysis" class="read-more">Read more...</a>
                     </p>
                 </div>
                 <div>
@@ -47,76 +48,77 @@
                 </div>
             </div>
 
-            <!-- <div class="project-card">
+            <div class="project-card">
                 <div>
-                    <h3>Project 1 Title</h3>
+                    <a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/data%20cleaning%20spotify%202024%20songs"><h3>Cleaning Most Streamed Spotify Songs 2024 Data</h3></a>
                 </div>
                 <div class="project-image">
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" style="height: 200px;">
+                    <img src="projects-pages/cleaning_most_streamed_spotify_songs_2024_data/pictures/spotify-logo.png" style="height: 200px;">
                 </div>
                 <div>
-                    <p>This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation.  
-                        This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation.  
-                        This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation.  
-                        This is a placeholder text. It's a jumble of Latin-like words meant.  
-                        <br><a href="projects-pages/project1/project1.html" class="read-more">Read more...</a>
+                    <p>The aim of this project is to clean the Spotify 2024 dataset. The input is a raw uncleaned Spotify data and the output is a tidy dataset. The source of the data was a kaggle dataset. 
+                        The project helped me practice problem solving, researching, critical thinking and data transformation using select(), mutate(), group_by(), filter() etc.
+                        The primary R package that I used is Tidyverse, which helped to produce a dataset that did not have duplicates or missing values. All variables had appropriate class (or type) and each value was in its own cell.  
+                        <br><a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/data%20cleaning%20spotify%202024%20songs" class="read-more">Read more...</a>
                     </p>
                 </div>
                 <div>
-                    <span class="project-tags">tag 1</span>
-                    <span class="project-tags">tag 2</span>
-                    <span class="project-tags">tag 3</span>
-                    <span class="project-tags">tag 4</span>
-                    <span class="project-tags">tag 5</span>
+                    <span class="project-tags">R</span>
+                    <span class="project-tags">tidyverse</span>
+                    <span class="project-tags">data cleaning</span>
+                    <span class="project-tags">data analytics</span>
+                    <span class="project-tags">exploratory data analytics</span>
                 </div>
             </div>
 
             <div class="project-card">
                 <div>
-                    <h3>Project 1 Title</h3>
+                    <a href="https://github.com/WeruHarrison/portfolio-projects/tree/main/Cleaning%20OICA%20Passengers%20Cars%20Sales%20(2019-2024)"><h3>Cleaning OICA Passengers Cars Sales (2019-2024)</h3></a>
                 </div>
                 <div class="project-image">
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" style="height: 200px;">
+                    <img src="projects-pages/Cleaning OICA Passengers Cars Sales (2019-2024)/pictures/logo-oica.jpg" style="height: 200px;">
                 </div>
                 <div>
-                    <p>This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation. 
-                        This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation. 
-                        This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation. 
-                        This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation.
-                        <br><a href="projects-pages/project1/project1.html" class="read-more">Read more...</a>
+                    <p>The aim of this project is to clean the global passengers cars sales as reported by the International Organization of Motor Vehicle Manufacturers (OICA). The input is a raw sales data from the 2019 to 2019 and the output is a tidy sales dataset. The data can be found on the official OICA website.
+                        The most important skill I practiced in this project is critical thinking and researching. For instance, I identified more than two methods to rename the column names. I would have used the <code>stringr</code> package with other base R functions to separate the characters, put them in another column and then deselect them. However, I decided to go with the <code>rename()</code> function since it was the most straight forward desite the extensive manual work. 
+                        Other skills I developed during the project include data transformation using <code>select()</code>, <code>pivot_longer()</code> and others
+                        I used the Tidyverse, readxl, and janitor packages to clean the data. 
+                        I have mastered transforming untidy numeric data. There was limited untidy strings characters so I still need more practice with the <code>stringr</code> package. Having learned how to create multiple dataframes from a single one, I also need to practice with joining different datasets to a single one.
+                        <br><a href="https://github.com/WeruHarrison/portfolio-projects/tree/main/Cleaning%20OICA%20Passengers%20Cars%20Sales%20(2019-2024)" class="read-more">Read more...</a>
                     </p>
                 </div>
                 <div>
-                    <span class="project-tags">tag 1</span>
-                    <span class="project-tags">tag 2</span>
-                    <span class="project-tags">tag 3</span>
-                    <span class="project-tags">tag 4</span>
-                    <span class="project-tags">tag 5</span>
+                    <span class="project-tags">R</span>
+                    <span class="project-tags">tidyverse</span>
+                    <span class="project-tags">janitor</span>
+                    <span class="project-tags">data cleaning</span>
+                    <span class="project-tags">data analytics</span>
                 </div>
             </div>
 
-            <div class="project-card">
+           <div class="project-card">
                 <div>
-                    <h3>Project 1 Title</h3>
+                    <a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/Cleaning%20Spotify%20Unpopular%20Songs%202022"><h3>Cleaning Spotify Unpopular Songs 2022</h3></a>
                 </div>
                 <div class="project-image">
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" style="height: 200px;">
+                    <img src="projects-pages/cleaning_most_streamed_spotify_songs_2024_data/pictures/spotify-logo.png" style="height: 200px;">
                 </div>
                 <div>
-                    <p>This is a placeholder text. It's a jumble of Latin-like words meant to mimic the appearance of readable text without actually saying anything. I have used it to fill space in this layout to demonstrate how text will look without distracting from the overall visual presentation. 
-                        <br><a href="projects-pages/project1/project1.html" class="read-more">Read more...</a>
+                    <p>Cleaning a dataframe of unpopular songs from spotify. They all have a Spotify's popularity rating of below 10 out 100.
+                        I used the tidyverse package to convert variables to appropriate class types, merge two data frames, addressing missing and duplicated values and other operations.
+                        <br><a href="https://github.com/WeruHarrison/portfolio-projects/blob/main/Cleaning%20Spotify%20Unpopular%20Songs%202022" class="read-more">Read more...</a>
                     </p>
                 </div>
                 <div>
-                    <span class="project-tags">tag 1</span>
-                    <span class="project-tags">tag 2</span>
-                    <span class="project-tags">tag 3</span>
-                    <span class="project-tags">tag 4</span>
-                    <span class="project-tags">tag 5</span>
+                    <span class="project-tags">R</span>
+                    <span class="project-tags">tidyverse</span>
+                    <span class="project-tags">data cleaning</span>
+                    <span class="project-tags">data analytics</span>
+                    <span class="project-tags">exploratory data analytics</span>
                 </div>
             </div>
             
-            <div class="project-card">
+             <!--<div class="project-card">
                 <div>
                     <h3>Project 1 Title</h3>
                 </div>
@@ -139,57 +141,42 @@
         </div>
 
         <div class="right-column">
-            <div class="contact-card">
-                <div>
-                    <img src="../pictures/profile_pic(1).jpg" alt="A picture of Harrison Weru" style="height: auto; width: 100%;">
-                </div>
-                <div>
-                    <h1 style="font-size: 26px; margin: 24px 0;">Harrison Weru</h1>
-                </div>
-                <div>
-                    <p style="font-size: 20px; margin: 24px 0;">Economist | Data Analyst</p>
-                </div>
-
-                <a style="padding: 0 8px;" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg" style="color: #000000;"></i></a>
-                <a style="padding: 0 8px;" href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-lg" style="color: #000000;"></i></a>
-                <a style="padding: 0 8px;" href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i></a>
-
-                <a href="../contact.html"><button class="contact-card-button">Contact</button></a>
-            </div>
 
             <div class="recent-projects-card">
-                <h1>Recent Projects</h1>
-                <!-- <p>
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" class="recent-projects-card-image">
-                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">The Evolution and Utility of Lorem Ipsum As A Timeless Tool in Design and Publishing</a>
+                <h2>Recent Projects</h2>
+                <p>
+                    <img src="projects-pages/cleaning_most_streamed_spotify_songs_2024_data/pictures/spotify-logo.png" class="recent-projects-card-image">
+                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">Cleaning Spotify Unpopular Songs 2022</a>
+                    <hr style="max-width: 300px; opacity: 0.6;">
+                </p>
+               <p>
+                    <img src="projects-pages/Cleaning OICA Passengers Cars Sales (2019-2024)/pictures/logo-oica.jpg" class="recent-projects-card-image">
+                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">Cleaning OICA Passengers Cars Sales (2019-2024)</a>
                     <hr style="max-width: 300px; opacity: 0.6;">
                 </p>
                 <p>
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" class="recent-projects-card-image">
-                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">The Evolution and Utility of Lorem Ipsum As A Timeless Tool in Design and Publishing</a>
-                    <hr style="max-width: 300px; opacity: 0.6;">
+                    <img src="projects-pages/cleaning_most_streamed_spotify_songs_2024_data/pictures/spotify-logo.png" class="recent-projects-card-image">
+                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">Cleaning Most Streamed Spotify Songs 2024 Data</a>
                 </p>
-                <p>
-                    <img src="projects-pages/project1/images/robot portrait.jpeg" class="recent-projects-card-image">
-                    <a href="projects-pages/project1/project1.html" class="recent-projects-card-link">The Evolution and Utility of Lorem Ipsum As A Timeless Tool in Design and Publishing</a>
-                </p> -->
             </div>
         </div>
     </div>
 
     <footer class="footer">
         <div class="flex-footer-item-left">
-        <h2><a href="../index.html" style="font-size:20px">Harrison Weru</a></h2>
+        <h2><a href="../index.html" style="font-size:1.25rem">Harrison Weru</a></h2>
         <a href="index.html">Projects</a><br>
         <a href="../blogs/index.html">Blogs</a><br>
         <a href="../contact.html">Contact</a>
         </div>
         
         <div class="flex-footer-item-middle">
-        <h2>Recent Projects</h2>
-        <!-- <a href="projects-pages/project1/project1.html">Project 1 title</a><br>
-        <a href="projects-pages/project2.html">Project 2 title</a><br>
-        <a href="projects-pages/project3.html">Project 3 title</a><br> -->
+            <h2>Recent Projects</h2>
+            <ul style="list-style: none; margin: 0 -100px;">
+                <li><a href="#">Cleaning Spotify Unpopular Songs 2022</a></li>
+                <li><a href="#">Cleaning OICA Passengers Cars Sales (2019-2024)</a></li>
+                <li><a href="#">Cleaning Most Streamed Spotify Songs 2024 Data</a></li>
+            </ul>
         </div>
         
         <div class="flex-footer-item-right">
@@ -200,7 +187,7 @@
         </div>
         
         <div class="copyright">
-        &copy 2024 Harrison Weru
+        &copy 2025 Harrison Weru
         </div>
     </footer>
 </body>
